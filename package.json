@@ -3,5 +3,22 @@
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "nodemon": "^3.0.1"
-  }
+  },
+  "name": "durianpay-assignment",
+  "description": "<a href = \"https://drive.google.com/file/d/1w7_NEWz_kk9VfX4JPiIZYj6JqWzrsDta/view?usp=sharing\" > Video Link </a>\r  <br>\r This web application, developed with <b>Node.js and Express</b>.js, facilitates price comparison across multiple websites by aggregating product details via APIs.\r <br> &ensp; &#9745; Filter (highest price/lowest price/highest review & rating) [default: none]\r <br> &ensp; &#9745; Top n [default: 3]\r <br> &ensp; &#9745; Comparison websites – multi select from options [default: all]\r <br> &ensp; &#9745; Used at least 5 websites from where you will get prices and product data\r <br> &ensp; &#9745;  Ensure all requests to comparison websites are done async\r <br> This repository showcases the implementation of a robust price comparison web application, leveraging <b>Node.js and Express.js</b> to create a seamless <b>API for comparing product prices</b> across multiple websites.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prabhxjottsingh/price-compare-webapp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prabhxjottsingh/price-compare-webapp/issues"
+  },
+  "homepage": "https://github.com/prabhxjottsingh/price-compare-webapp#readme"
 }
