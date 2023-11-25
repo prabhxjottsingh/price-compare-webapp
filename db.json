@@ -1,0 +1,109 @@
+{
+  "companies": [
+    { "id": "1", "name": "amazon" },
+    { "id": "2", "name": "flipkart" },
+    { "id": "3", "name": "walmart" }
+  ],
+
+  "products": [
+    { "id": "1", "name": "Washing Machine LG" },
+    { "id": "2", "name": "Google Smart Home" },
+    { "id": "3", "name": "JBL Noise Cancellation Earbuds" }
+  ],
+
+  "amazon": [
+    {
+      "id": "1",
+      "title": "Washing Machine LG",
+      "url": "https://amazon.in",
+      "total_review_count": "70",
+      "rating": "4.5",
+      "price": "100000",
+      "website": "https://amazon.in"
+    },
+    {
+      "id": "2",
+      "title": "Google Smart Home",
+      "url": "https://amazon.in",
+      "total_review_count": "1000",
+      "rating": "3.9",
+      "price": "9900",
+      "website": "https://amazon.in"
+    },
+    {
+      "id": "3",
+      "title": "JBL Noise Cancellation Earbuds",
+      "url": "https://amazon.in",
+      "total_review_count": "1060",
+      "rating": "4.7",
+      "price": "17999",
+      "website": "https://amazon.in"
+    }
+     
+  ],
+
+  "flipkart": [
+    {
+      "id": "1",
+      "title": "Washing Machine LG",
+      "url": "https://flipkart.in",
+      "total_review_count": "67",
+      "rating": "4.23",
+      "price": "100500",
+      "website": "https://flipkart.in"
+    },
+    {
+      "id": "2",
+      "title": "Google Smart Home",
+      "url": "https://flipkart.in",
+      "total_review_count": "1900",
+      "rating": "3.78",
+      "price": "9999",
+      "website": "https://flipkart.in"
+    },
+    {
+      "id": "3",
+      "title": "JBL Noise Cancellation Earbuds",
+      "url": "https://flipkart.in",
+      "total_review_count": "1360",
+      "rating": "4.3",
+      "price": "14999",
+      "website": "https://flipkart.in"
+    }
+     
+  ],
+
+  "walmart": [
+    {
+      "id": "1",
+      "title": "Washing Machine LG",
+      "url": "https://walmart.in",
+      "total_review_count": "63",
+      "rating": "4.45",
+      "price": "105000",
+      "website": "https://walmart.in"
+    },
+    {
+      "id": "2",
+      "title": "Google Smart Home",
+      "url": "https://walmart.in",
+      "total_review_count": "1400",
+      "rating": "3.50",
+      "price": "9990",
+      "website": "https://walmart.in"
+    },
+    {
+      "id": "3",
+      "title": "JBL Noie Cancellation Earbuds",
+      "url": "https://walmart.in",
+      "total_review_count": "1367",
+      "rating": "4.9",
+      "price": "11999",
+      "website": "https://walmart.in"
+    }
+     
+  ]
+
+
+
+}

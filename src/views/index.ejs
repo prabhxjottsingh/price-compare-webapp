@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Integration</title>
+  <style>
+    body {
+      background-color: #dfdcdc;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      font-size: large;
+    }
+
+    .h1{
+      align-self: center;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    label {
+      display: flexbox;
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+
+    select,
+    input[type="checkbox"] {
+      width: 50%;
+      margin-top: 10px;
+      /* padding: 1px; */
+      margin-bottom: 1px;
+      border: 3px solid #ddd;
+      /* border-radius: 5px; */
+      /* box-sizing: border-box; */
+      margin-top: 1px;
+    }
+
+    .checkbox-group {
+      margin-top: 10px;
+      margin-bottom: 1px;
+      font-size: 18px;
+      padding-bottom: 10px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Submit Data</h1>
+  
+    <form action="/compare" method="post">
+      <div class="form-group">
+        <label for="productSelect">Choose a Product:</label>
+        <select name="productSelect" id="productSelect">
+          <% productsArray.forEach((product, index) => { %>
+            <option value="<%= product.id %>"><%= product.name %></option>
+          <% }); %>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label>Choose the websites:</label>
+        <% companiesArray.forEach((company, index) => { %>
+          <div class="checkbox-group">
+            <input type="checkbox" name="selectedCompanies" value="<%= company.id %>" checked>
+            <label><%= company.name %></label>
+          </div>
+        <% }); %>
+      </div>
+
+      <div class="form-group">
+        <label for="sortBasis">Sort Basis:</label>
+        <select name="sortBasis" id="sortBasis">
+          <option value="price">Price</option>
+          <option value="rating">Rating</option>
+          <option value="total_review_count">Total Review Count</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="sortOrder">Sort Order:</label>
+        <select name="sortOrder" id="sortOrder">
+          <option value="asc">Ascending</option>
+          <option value="desc">Descending</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="topN">Number of items to be shown:</label>
+        <select name="topN" id="topN">
+          <% for (let idx = 0; idx < companiesArray.length; idx++) { %>
+            <option value="<%= idx + 1 %>"><%= idx + 1 %></option>
+          <% } %>
+        </select>
+      </div>
+    
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>

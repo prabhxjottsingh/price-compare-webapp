@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: rgb(246, 241, 236);
+    }
+
+    form {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #4caf50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #e6e6e6;
+    }
+
+  </style>
+</head>
+<body>
+
+<form action="/compare" method="post">
+  <input type="hidden" name="productSelect" value="<%= productSelect %>">
+  <input type="hidden" name="selectedCompanies" value="<%= selectedCompanies %>">
+
+  <label for="sortBasis">Sort Basis:</label>
+  <select name="sortBasis">
+    <option value="total_review_count">Total Review Count</option>
+    <option value="rating">Rating</option>
+    <option value="price">Price</option>
+  </select>
+  
+  <label for="sortOrder">Sort Order:</label>
+  <select name="sortOrder">
+    <option value="asc">Ascending</option>
+    <option value="desc">Descending</option>
+  </select>
+
+  <label for="topN">Number of items to be shown:</label>
+  <select name="topN">
+    <% for (let idx = 0; idx < selectedCompanies.length; idx++) { %>
+      <option value="<%= idx + 1 %>"><%= idx + 1 %></option>
+    <% } %>
+  </select>
+
+  <button type="submit">Sort</button>
+</form>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>URL</th>
+      <th>Total Review Count</th>
+      <th>Rating</th>
+      <th>Price</th>
+      <th>Website</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% requestedData.forEach((data, index) => { %>
+      <tr>
+        <td><%= data.title %></td>
+        <td><a href="<%= data.url %>" target="_blank"><%= data.url %></a></td>
+        <td><%= data.total_review_count %></td>
+        <td><%= data.rating %></td>
+        <td><%= data.price %></td>
+        <td><a href="<%= data.website %>" target="_blank"><%= data.website %></a></td>
+      </tr>
+    <% }); %>
+  </tbody>
+</table>
+
+</body>
+</html>
