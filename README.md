@@ -1,5 +1,9 @@
 # Price Comparison Webapp -
- <a href = "https://drive.google.com/file/d/1w7_NEWz_kk9VfX4JPiIZYj6JqWzrsDta/view?usp=sharing" > Video Link </a>
+Click the Image to view the demo Video: 
+
+<a href="https://drive.google.com/file/d/14WAAh-vXXePhV-sstgYHbVvwwULjGGuC/view?usp=sharing">
+  <img src="https://img.freepik.com/free-vector/minimal-white-style-video-player-template-design_1017-25481.jpg?size=626&ext=jpg&ga=GA1.1.1803636316.1700784000&semt=ais" alt="Video Thumbnail" width="350" height="180">
+</a>
  <br>
 This web application, developed with <b>Node.js and Express</b>.js, facilitates price comparison across multiple websites by aggregating product details via APIs.
 <br> &ensp; &#9745; Filter (highest price/lowest price/highest review & rating) [default: none]
