@@ -37,56 +37,51 @@ cd .\price-compare-webapp\
 ```
 npm install
 ```
-3. Install project dependencies by running, 
+3. Create a Mock REST API using JSON file by making your local machine act as a server for the mock API at port 3000, from where our data of products will be fetched
 ```
-pip install -r requirements.txt
+npm install -g json-server 
+json-server --watch db.json --port 3000
 ```
-4. Activate the database and make the migrations,
+4. 
 ```
-python manage.py makemigrations
-python manage.py migrate
-```
-5. In the end, don't forget to get out of the virtual environment using the command,
-```
-deactivate
+nodemon src/index.js
 ```
 
 <a id="run-app"></a>
 ## Running the application
-To start the Bookstore Management System on local system, use the following command: 
+To start the Application on local system, use the following command, open another terminal in github repository and run: 
 ```
-python manage.py runserver
+nddemon src/index.js
 ```
-This will start the server, and you should see a message indicating that the server is running on the specified port.
+This will start the server, and you should see a message indicating that the server is running on the specified port, 8000.
 
 <a id = "api-endpoints"> </a>
-## API endpoints
-The system provides the following API endpoints for managing CRUD operation, along with validation:
+##Mock API endpoints
+The system provides the following API endpoints for fetching data like products, websites, and list of all range of products at particualr websites, 
 
 ```
-GET    /books                       : Retrieve all books
-GET    /books/{id}                  : Retrieve single book by id
-POST   /books/                      : Create a new Book
-DELETE /books/{id}                  : DELETE an existing book
-PUT    /books/{id}/partial-update/  : Partially update an existing book
+Base URL: 'http://localhost:3000'
+/products                    : Retrieve all available
+/company                     : Retrieve all available websites
+/{companyName}               : Retrieve all products available at the website name 'companyName'.
 ```
 
 <a id = "error-hand"> </a>
-## Error Hadnling
-Creating or updating a book with wrong information will give an error.
+## Error Handling
+```Try``` and  ```catch``` blocks are included at every point of fetching of the data from API endpoints to take care in cases of no data fetched or other problems.    
+
 
 <a id = "depen"></a>
 ## Dependencies
 The system uses the following main dependencies:
 ```
-Python: A versatile and high-level programming language.
-Django: A Python web framework for building web applications.
-Django Rest Framework: A powerful tool for creating RESTful APIs in Django.
+Node: JavaScript runtime environment.
+Express: Web framework for Node.js.
+EJS: Templating language for generating HTML.
+Nodemon: Automatic Node.js server restarts.
+JSON-Server: Mock API development for testing.
 ```
 
 <a id = "conc"></a>
 ## Conclusion
-```
-You now have the Bookstore Management System up and running on your local machine. Use the provided API endpoints to manage book records in your bookstore. 
-Customize and extend the system according to your needs.
-```
+Explored the live comparison tool and its APIs to manage product comparisons. Extend and customize it as needed for personalized product analysis.
