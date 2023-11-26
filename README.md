@@ -51,7 +51,7 @@ nodemon src/index.js
 ## Running the application
 To start the Application on local system, use the following command, open another terminal in github repository and run: 
 ```
-nddemon src/index.js
+nodemon src/index.js
 ```
 This will start the server, and you should see a message indicating that the server is running on the specified port, 8000.
 
