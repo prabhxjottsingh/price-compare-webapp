@@ -2,16 +2,21 @@
   "companies": [
     { "id": "1", "name": "amazon" },
     { "id": "2", "name": "flipkart" },
-    { "id": "3", "name": "walmart" }
+    { "id": "3", "name": "walmart" },
+    { "id": "4", "name": "indiamart" },
+    { "id": "5", "name": "ebay" }
   ],
 
   "products": [
     { "id": "1", "name": "Washing Machine LG" },
     { "id": "2", "name": "Google Smart Home" },
-    { "id": "3", "name": "JBL Noise Cancellation Earbuds" }
+    { "id": "3", "name": "JBL Noise Cancellation Earbuds" },
+    { "id": "4", "name": "Sony 4K Ultra HD TV" },
+    { "id": "5", "name": "Apple iPhone 13" },
+    { "id": "6", "name": "Dell XPS 15 Laptop" }
   ],
 
-  "amazon": [
+  "Amazon": [
     {
       "id": "1",
       "title": "Washing Machine LG",
@@ -38,11 +43,38 @@
       "rating": "4.7",
       "price": "17999",
       "website": "https://amazon.in"
+    },
+    {
+      "id": "4",
+      "title": "Sony 4K Ultra HD TV",
+      "url": "https://amazon.in",
+      "total_review_count": "800",
+      "rating": "4.6",
+      "price": "150000",
+      "website": "https://amazon.in"
+    },
+    {
+      "id": "5",
+      "title": "Apple iPhone 13",
+      "url": "https://amazon.in",
+      "total_review_count": "2500",
+      "rating": "4.8",
+      "price": "79999",
+      "website": "https://amazon.in"
+    },
+    {
+      "id": "6",
+      "title": "Dell XPS 15 Laptop",
+      "url": "https://amazon.in",
+      "total_review_count": "1200",
+      "rating": "4.5",
+      "price": "130000",
+      "website": "https://amazon.in"
     }
      
   ],
 
-  "flipkart": [
+  "Flipkart": [
     {
       "id": "1",
       "title": "Washing Machine LG",
@@ -69,11 +101,38 @@
       "rating": "4.3",
       "price": "14999",
       "website": "https://flipkart.in"
+    },
+    {
+      "id": "4",
+      "title": "Sony 4K Ultra HD TV",
+      "url": "https://flipkart.in",
+      "total_review_count": "900",
+      "rating": "4.5",
+      "price": "155000",
+      "website": "https://flipkart.in"
+    },
+    {
+      "id": "5",
+      "title": "Apple iPhone 13",
+      "url": "https://flipkart.in",
+      "total_review_count": "2700",
+      "rating": "4.7",
+      "price": "78999",
+      "website": "https://flipkart.in"
+    },
+    {
+      "id": "6",
+      "title": "Dell XPS 15 Laptop",
+      "url": "https://flipkart.in",
+      "total_review_count": "1100",
+      "rating": "4.4",
+      "price": "135000",
+      "website": "https://flipkart.in"
     }
      
   ],
 
-  "walmart": [
+  "Walmart": [
     {
       "id": "1",
       "title": "Washing Machine LG",
@@ -100,6 +159,149 @@
       "rating": "4.9",
       "price": "11999",
       "website": "https://walmart.in"
+    },
+    {
+      "id": "4",
+      "title": "Sony 4K Ultra HD TV",
+      "url": "https://walmart.in",
+      "total_review_count": "850",
+      "rating": "4.7",
+      "price": "152000",
+      "website": "https://walmart.in"
+    },
+    {
+      "id": "5",
+      "title": "Apple iPhone 13",
+      "url": "https://walmart.in",
+      "total_review_count": "2600",
+      "rating": "4.9",
+      "price": "79900",
+      "website": "https://walmart.in"
+    },
+    {
+      "id": "6",
+      "title": "Dell XPS 15 Laptop",
+      "url": "https://walmart.in",
+      "total_review_count": "1250",
+      "rating": "4.6",
+      "price": "132000",
+      "website": "https://walmart.in"
+    }
+     
+  ],
+
+  "Indiamart": [
+    {
+      "id": "1",
+      "title": "Washing Machine LG",
+      "url": "https://indiamart.in",
+      "total_review_count": "59",
+      "rating": "4.35",
+      "price": "105040",
+      "website": "https://indiamart.in"
+    },
+    {
+      "id": "2",
+      "title": "Google Smart Home",
+      "url": "https://indiamart.in",
+      "total_review_count": "1260",
+      "rating": "3.78",
+      "price": "8990",
+      "website": "https://indiamart.in"
+    },
+    {
+      "id": "3",
+      "title": "JBL Noie Cancellation Earbuds",
+      "url": "https://indiamart.in",
+      "total_review_count": "1587",
+      "rating": "4.49",
+      "price": "11909",
+      "website": "https://indiamart.in"
+    },
+    {
+      "id": "4",
+      "title": "Sony 4K Ultra HD TV",
+      "url": "https://indiamart.in",
+      "total_review_count": "820",
+      "rating": "4.8",
+      "price": "149999",
+      "website": "https://indiamart.in"
+    },
+    {
+      "id": "5",
+      "title": "Apple iPhone 13",
+      "url": "https://indiamart.in",
+      "total_review_count": "2550",
+      "rating": "4.7",
+      "price": "78990",
+      "website": "https://indiamart.in"
+    },
+    {
+      "id": "6",
+      "title": "Dell XPS 15 Laptop",
+      "url": "https://indiamart.in",
+      "total_review_count": "1300",
+      "rating": "4.4",
+      "price": "134999",
+      "website": "https://indiamart.in"
+    }
+     
+  ],
+
+  "Ebay": [
+    {
+      "id": "1",
+      "title": "Washing Machine LG",
+      "url": "https://ebay.in",
+      "total_review_count": "68",
+      "rating": "4.30",
+      "price": "104040",
+      "website": "https://ebay.in"
+    },
+    {
+      "id": "2",
+      "title": "Google Smart Home",
+      "url": "https://ebay.in",
+      "total_review_count": "1134",
+      "rating": "3.98",
+      "price": "10990",
+      "website": "https://ebay.in"
+    },
+    {
+      "id": "3",
+      "title": "JBL Noie Cancellation Earbuds",
+      "url": "https://ebay.in",
+      "total_review_count": "1463",
+      "rating": "4.54",
+      "price": "11999",
+      "website": "https://ebay.in"
+    },
+    {
+      "id": "4",
+      "title": "Sony 4K Ultra HD TV",
+      "url": "https://ebay.in",
+      "total_review_count": "830",
+      "rating": "4.6",
+      "price": "153000",
+      "website": "https://ebay.in"
+    },
+    {
+      "id": "5",
+      "title": "Apple iPhone 13",
+      "url": "https://ebay.in",
+      "total_review_count": "2650",
+      "rating": "4.8",
+      "price": "79499",
+      "website": "https://ebay.in"
+    },
+    {
+      "id": "6",
+      "title": "Dell XPS 15 Laptop",
+      "url": "https://ebay.in",
+      "total_review_count": "1280",
+      "rating": "4.5",
+      "price": "136000",
+      "website": "https://ebay.in"
     }
      
   ]

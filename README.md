@@ -30,7 +30,7 @@ Before you begin, ensure you have the following installed:
 ## Getting Started
 1. Clone the repository to your local machine, and navigate into it,
 ```
-git@github.com:prabhxjottsingh/price-compare-webapp.git
+git clone git@github.com:prabhxjottsingh/price-compare-webapp.git
 cd .\price-compare-webapp\
 ```
 2.Run the following command to install all the requirements for the applicatin to run on your machine

@@ -1,10 +1,13 @@
 // routes.js
 const express = require('express');
 const router = express.Router();
-const { getIndex, postCompare } = require('../controllers');
+const indexController = require('../controllers/indexController');
+const compareController = require('../controllers/compareController');
 
-// Define routes
-router.get('/', getIndex);
-router.post('/compare', postCompare);
+//load the company name and products available
+router.get('/', indexController);
+
+//sort the port comparison data
+router.post('/compare', compareController);
 
 module.exports = router;
